@@ -7,11 +7,28 @@ CitiBank Quant Dev Java coding exercise : Order Book Engine
 
 - [Project Title](#project-title)
 - [Table of contents](#table-of-contents)
+- [Description](#Description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Design](#design)
 - [Enhancement](#enhancement)
 - [Release History](#release-history)
+
+# Description
+[(Back to top)](#table-of-contents)
+
+This is a simple Order book processing engine that works on following principles:
+- Orders -
+    - An order is instruction from client to purchase or sell a security. 
+    - It is made of timestamp, orderid, buy/sell, price, quantity & a unique sequence number.
+    - Each order event represents either Add, Update or Cancel operation.
+- BBO (Best Bid Offer)
+    - Level 1 market data representing highest Bid and lowest ask as of that time.
+    - It is made of timestamp, bidprice, bidqty, askprice, askqty and unique sequence number.
+- Order Book Engine 
+    - Implements functional requirement of processing orders .
+    - Checks if order qty and price are above error thresholds then create BBO as of that time.
+    - See Design section for more details.
 
 # Installation
 [(Back to top)](#table-of-contents)
