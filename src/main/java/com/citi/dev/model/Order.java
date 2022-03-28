@@ -15,7 +15,7 @@ public class Order {
     }
 
     public static final double THRESHOLD_TICK_SIZE = 0.001;
-    public static final double THRESHOLD_LOT_SIZE = 100;
+    public static final double THRESHOLD_LOT_SIZE = 10;
 
     private final String seqNum;
     private final String orderId;

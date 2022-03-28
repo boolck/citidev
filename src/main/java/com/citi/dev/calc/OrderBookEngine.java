@@ -6,6 +6,7 @@ import com.citi.dev.excp.OrderProcessingException;
 import com.citi.dev.model.BBO;
 import com.citi.dev.model.Order;
 
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -45,11 +46,12 @@ public class OrderBookEngine {
     private void checkTickAndLotSize(InputEvent request) throws InvalidOrderException{
         Order order = request.getOrder();
         Objects.requireNonNull(order);
-        if(order.getQty()<Order.THRESHOLD_LOT_SIZE){
+        if(order.getQty()%Order.THRESHOLD_LOT_SIZE!=0){
             String log = String.format("Lot Size of order %s should be more than threshold %f",order,Order.THRESHOLD_TICK_SIZE);
             throw new InvalidOrderException(log);
         }
-        if(order.getPrice()<Order.THRESHOLD_TICK_SIZE){
+        BigDecimal remainder = BigDecimal.valueOf(order.getPrice()).remainder(BigDecimal.valueOf(Order.THRESHOLD_TICK_SIZE));
+        if(remainder.compareTo(BigDecimal.ZERO)>0.00000001){
             String log = String.format("Tick Size of order %s should be more than threshold %f",order,Order.THRESHOLD_TICK_SIZE);
             throw new InvalidOrderException(log);
         }
