@@ -1,6 +1,6 @@
-package com.citi.dev.event;
+package com.boolck.dev.event;
 
-import com.citi.dev.model.Order;
+import com.boolck.dev.model.Order;
 
 //input CANCEL  request with  order to be cancelled
 public class CancelOrderEvent implements InputEvent {

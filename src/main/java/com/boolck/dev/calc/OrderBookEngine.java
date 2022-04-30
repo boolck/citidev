@@ -1,10 +1,13 @@
-package com.citi.dev.calc;
+package com.boolck.dev.calc;
 
-import com.citi.dev.event.*;
-import com.citi.dev.excp.InvalidOrderException;
-import com.citi.dev.excp.OrderProcessingException;
-import com.citi.dev.model.BBO;
-import com.citi.dev.model.Order;
+import com.boolck.dev.event.CancelOrderEvent;
+import com.boolck.dev.event.InputEvent;
+import com.boolck.dev.event.NewOrderEvent;
+import com.boolck.dev.event.UpdateOrderEvent;
+import com.boolck.dev.excp.InvalidOrderException;
+import com.boolck.dev.excp.OrderProcessingException;
+import com.boolck.dev.model.BBO;
+import com.boolck.dev.model.Order;
 
 import java.math.BigDecimal;
 import java.util.*;
@@ -34,7 +37,7 @@ public class OrderBookEngine {
 
 
     //processes the micro batch of incoming requests.
-    public void processRequest(Stream<InputEvent> requestStream) throws InvalidOrderException,OrderProcessingException {
+    public void processRequest(Stream<InputEvent> requestStream) throws InvalidOrderException, OrderProcessingException {
         Iterator<InputEvent> iterator = requestStream.iterator();
         while (iterator.hasNext()) {
             InputEvent request = iterator.next();

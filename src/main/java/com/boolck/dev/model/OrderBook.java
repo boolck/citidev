@@ -1,6 +1,9 @@
-package com.citi.dev.model;
+package com.boolck.dev.model;
 
-import com.citi.dev.event.*;
+import com.boolck.dev.event.CancelOrderEvent;
+import com.boolck.dev.event.InputEvent;
+import com.boolck.dev.event.NewOrderEvent;
+import com.boolck.dev.event.UpdateOrderEvent;
 
 import java.io.Serializable;
 import java.util.Objects;

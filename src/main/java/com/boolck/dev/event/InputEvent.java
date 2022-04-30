@@ -1,7 +1,7 @@
-package com.citi.dev.event;
+package com.boolck.dev.event;
 
 
-import com.citi.dev.model.Order;
+import com.boolck.dev.model.Order;
 
 // event request interface to support all required order ops
 public interface InputEvent extends Comparable<InputEvent> {

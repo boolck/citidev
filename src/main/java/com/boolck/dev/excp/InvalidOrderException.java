@@ -1,4 +1,4 @@
-package com.citi.dev.excp;
+package com.boolck.dev.excp;
 
 //exception to capture any incorrect order event issues
 public class InvalidOrderException extends Exception{

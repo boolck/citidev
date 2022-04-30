@@ -1,7 +1,7 @@
 <!-- Add banner here -->
 
 # Project Title
-CitiBank Quant Dev Java coding exercise : Order Book Engine
+Market Order Book Matching Engine
 
 # Table of contents
 
@@ -23,7 +23,7 @@ This is a simple Order book processing engine that works on following principles
     - It is made of timestamp, orderid, buy/sell, price, quantity & a unique sequence number.
     - Each order event represents either Add, Update or Cancel operation.
 - BBO (Best Bid Offer)
-    - Level 1 market data representing highest Bid and lowest ask as of that time.
+    - Level 1 market data representing the highest Bid and lowest ask as of that time.
     - It is made of timestamp, bidprice, bidqty, askprice, askqty and unique sequence number.
 - Order Book Engine 
     - Implements functional requirement of processing orders .
@@ -37,7 +37,7 @@ To use this project, first clone the repo on your device using the command below
 
 ```git init```
 
-```git clone https://github.com/boolck/citidev.git``` 
+```git clone https://github.com/boolck/matching_engine.git``` 
 
 Verify that repository is checked out & then run
 
@@ -82,7 +82,7 @@ Enhancements for future releases:
 # Release History
 [(Back to top)](#table-of-contents)
 
-Release ver   | Description
-------------- | -------------
-1.0-SNAPSHOT  | First release. Supports Order add, cancel and update & creates Best Bid Offer.
+| Release ver  | Description                                                                    |
+|--------------|--------------------------------------------------------------------------------|
+| 1.0-SNAPSHOT | First release. Supports Order add, cancel and update & creates Best Bid Offer. |
 

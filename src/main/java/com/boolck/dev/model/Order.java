@@ -1,6 +1,6 @@
-package com.citi.dev.model;
+package com.boolck.dev.model;
 
-import com.citi.dev.util.OrderBookRequestFileUtil;
+import com.boolck.dev.util.OrderBookRequestFileUtil;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

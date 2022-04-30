@@ -7,7 +7,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <groupId>org.example</groupId>
-    <artifactId>citi_quant_dev</artifactId>
+    <artifactId>matching_engine</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -29,7 +29,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <mainClass>com.citi.dev.ApplicationRunner</mainClass>
+                    <mainClass>com.boolck.dev.ApplicationRunner</mainClass>
                     <arguments>
                         <argument>src/test/resources/input_orders.csv</argument>
                     </arguments>

@@ -1,4 +1,4 @@
-package com.citi.dev.model;
+package com.boolck.dev.model;
 
 import com.opencsv.bean.CsvBindByPosition;
 

@@ -1,6 +1,6 @@
-package com.citi.dev.event;
+package com.boolck.dev.event;
 
-import com.citi.dev.model.Order;
+import com.boolck.dev.model.Order;
 
 //input UPDATE  request with original order and new price & qty to be updated
 public class UpdateOrderEvent implements InputEvent {

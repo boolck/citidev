@@ -1,6 +1,6 @@
-package com.citi.dev.event;
+package com.boolck.dev.event;
 
-import com.citi.dev.model.Order;
+import com.boolck.dev.model.Order;
 
 //input NEW  request with  order to be inserted
 public class NewOrderEvent implements InputEvent {
